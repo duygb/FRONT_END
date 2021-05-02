@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRICK BREAKER - 18130055</title>
+    <link href="img/img.png" rel="icon">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="welcome">
+        <h1 class="text">Welcome <br> to<br> Brick Breaker</h1>
+    </div>
+     
+    <div class="background">
+        <img src="img/backgroud.jpg" id="bg_img">
+    </div>
+    <!-- game interface -->
+    <div id="gameInterface">
+        <img src="img/display.jpg">
+        <button name="button" type="button" id="playGame">Play Game</button>
+        <button name="button" type="button" id="tutorial">Tutorial</button>
+        <button name="button" type="button" id="modeGame">Mode</button>
+    </div>
+
+    <!-- tutorial interface -->
+    <div id="tutorialInterface">
+        <h1 class="title">Tutorial</h1>
+        <div class="con-text">
+            <p class="text"> Welcome to Brick Breaker Game!!! </br> Brick Breaker include five level, your mission must
+                break all bricks in each level.
+                Breaking a brick you will get 10 points, through a level or you play get 100 points you'll get one more
+                heart. To the start the game you need to press enter or space on the keyboard,
+                use the left and right button or you can also use the mouse to move the paddle to catch the ball. If you
+                dont
+                catch the ball you will lose one heart, lose all heart you'll lose.If you through five level, you'll
+                win.
+                Now, join the game and experience it.<br> Have a great time with the game.^^
+            </p>
+        </div>
+        <div class="con-btn">
+            <button name="button" type="button" id="joinGame">Join Game</button>
+            <button name="button" type="button" id="back-tutorial">Back</button>
+        </div>
+    </div>
+
+    <!-- funtion  -->
+    <div id="funtionKeys">
+        <!-- <img class="img" src="img/exit.png"> -->
+        <button id="newGame" type="button">New Game</button>
+        <button id="volumnOn" type="button">Volumn: ON</button>
+        <button id="volumnOff" type="button">Volumn: OFF</button>
+        <button id="musicOn" type="button">Music: ON</button>
+        <button id="musicOff" type="button">Music: OFF</button>
+        <button id="chooseMode" type="button">Mode</button>
+        <button id="exit" type="button">Exit</button>
+    </div>
+    <!-- <audio loop autoplay>
+        <source id="music_bg" src="../PingPong/mp3/BabyShark.mp3">
+    </audio> -->
+
+    <div id="modeInterface">
+        <h1 class="title-mode">Played By</h1>
+        <div class="mouse">
+            <img src="img/mouse.gif" class="mouseImg">
+            <button id="mode-mouse" type="button">Mouse</button>
+        </div>
+        <div class="keyboard">
+            <img src="img/leftORright.gif" class="keyImg">
+            <button id="mode-key" type="button">Keyboard</button>
+        </div>
+        <div class="back">
+
+            <button id="back-mode" type="button">Back</button>
+        </div>
+    </div>
+    <!-- choose level -->
+    <!-- <div id="chooseLevel">
+        <h1 class="title-level">Choose Level</h1>
+        <button id="btn-one" type="button">Level 1</button>
+        <button id="btn-two" type="button">Level 2</button>
+        <button id="btn-three" type="button">Level 3</button>
+        <button id="btn-four" type="button">Level 4</button>
+        <button id="btn-five" type="button">Level 5</button>
+        <button name="button" type="button" id="back-level">Back</button>
+    </div> -->
+    <div id="win">
+        <img src="img/win.png">
+        <p id="p-win">Click here to play again!!</p>
+    </div>
+    <div id="lose">
+        <img src="img/youlost.png">
+        <p id="p-lose">Click here to play again!!</p>
+    </div>
+
+    <canvas id="canvas" width="500" height="600">
+    </canvas>
+
+    <!-- <div id="leveltwo">
+        <button type="button" >button</button>
+    </div> -->
+    <!-- <canvas id="level2" width="500" height="600"></canvas> -->
+    <script src="js/PingPong.js"></script>
+    <!-- <script src="js/canvas_two.js"></script> -->
+</body>
+
+</html>
